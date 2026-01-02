@@ -1,25 +1,282 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Tavonga Tawodzera | Computer Science</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tavonga Tawodzera | Portfolio</title>
+  <meta name="description" content="Tavonga Tawodzera — Computer Science student. Projects, skills, and contact." />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <h1>Tavonga Tawodzera</h1>
-  <p>Computer Science student, aspiring software engineer.</p>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <h2>Projects</h2>
-  <ul>
-    <li>Portfolio Website (this site)</li>
-    <li>Python Programming Labs</li>
-    <li>Custom T-Shirt Print Business Platform</li>
-  </ul>
+  <header class="header">
+    <div class="container header__inner">
+      <div class="brand">
+        <div class="brand__mark" aria-hidden="true">TT</div>
+        <div>
+          <p class="brand__name">Tavonga Tawodzera</p>
+          <p class="brand__role">Computer Science Student • Developer</p>
+        </div>
+      </div>
 
-  <h2>Links</h2>
-  <ul>
-    <li><a href="https://github.com/TawodzeraT">GitHub</a></li>
-    <li><a href="#">LinkedIn (add later)</a></li>
-  </ul>
+      <nav class="nav" aria-label="Primary">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a class="btn btn--small" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="pill">Available for internships • 2026</p>
+          <h1 class="hero__title">
+            I build practical software and clean web experiences.
+          </h1>
+          <p class="hero__subtitle">
+            I’m Tavonga Tawodzera, a Computer Science student focused on building real projects, improving systems,
+            and shipping work that’s simple, reliable, and easy to use.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn" href="#projects">View projects</a>
+            <a class="btn btn--ghost" href="https://github.com/TawodzeraT" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+
+          <div class="stats" aria-label="Highlights">
+            <div class="stat">
+              <p class="stat__k">Focus</p>
+              <p class="stat__v">Python • Web • Systems</p>
+            </div>
+            <div class="stat">
+              <p class="stat__k">Currently</p>
+              <p class="stat__v">Building portfolio projects</p>
+            </div>
+            <div class="stat">
+              <p class="stat__k">Location</p>
+              <p class="stat__v">Lexington, KY</p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero__card" aria-label="Quick links">
+          <div class="card">
+            <h2 class="card__title">Quick Links</h2>
+            <div class="card__links">
+              <a class="link" href="https://github.com/TawodzeraT" target="_blank" rel="noreferrer">
+                <span>GitHub</span>
+                <span class="muted">TawodzeraT</span>
+              </a>
+              <a class="link" href="#contact">
+                <span>Contact</span>
+                <span class="muted">Email / links</span>
+              </a>
+              <a class="link" href="#projects">
+                <span>Projects</span>
+                <span class="muted">What I’m building</span>
+              </a>
+              <a class="link" href="#skills">
+                <span>Skills</span>
+                <span class="muted">Tools & strengths</span>
+              </a>
+            </div>
+
+            <div class="card__note">
+              <p class="muted">
+                www.linkedin.com/in/tavonga-tawodzera
+
+              </p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Projects</h2>
+          <p class="muted">A few things I’ve built or am actively improving.</p>
+        </div>
+
+        <div class="grid">
+          <article class="project">
+            <div class="project__top">
+              <h3>Personal Portfolio (tawodzera.dev)</h3>
+              <p class="muted">GitHub Pages + custom domain + HTTPS</p>
+            </div>
+            <p>
+              A lightweight portfolio site deployed with GitHub Pages. Includes custom DNS, SSL, and clean structure.
+            </p>
+            <div class="tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">GitHub Pages</span>
+              <span class="tag">DNS</span>
+            </div>
+            <div class="project__actions">
+              <a class="btn btn--ghost btn--small" href="https://tawodzera.dev" target="_blank" rel="noreferrer">Live</a>
+              <a class="btn btn--ghost btn--small" href="https://github.com/TawodzeraT/tawodzera.dev" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__top">
+              <h3>Python Practice Projects</h3>
+              <p class="muted">Problem-solving and foundational CS</p>
+            </div>
+            <p>
+              A growing collection of Python labs and small utilities focused on clean logic, functions/classes, and file I/O.
+            </p>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">OOP</span>
+              <span class="tag">Algorithms</span>
+            </div>
+            <div class="project__actions">
+              <a class="btn btn--ghost btn--small" href="https://github.com/TawodzeraT" target="_blank" rel="noreferrer">View GitHub</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__top">
+              <h3>Custom Printing Business Workflow</h3>
+              <p class="muted">Operations + automation mindset</p>
+            </div>
+            <p>
+              Exploring ways to streamline order processing and improve online conversion with better product pages and systems.
+            </p>
+            <div class="tags">
+              <span class="tag">E-commerce</span>
+              <span class="tag">Process</span>
+              <span class="tag">Optimization</span>
+            </div>
+            <div class="project__actions">
+              <a class="btn btn--ghost btn--small" href="#contact">Ask about it</a>
+            </div>
+          </article>
+        </div>
+
+        <p class="muted small">
+          Want this section to feel stronger? Add 2–3 more projects, even small ones (calculator, scraper, CLI tool, etc.).
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2>Skills</h2>
+          <p class="muted">Core tools I use and skills I’m actively developing.</p>
+        </div>
+
+        <div class="grid grid--skills">
+          <div class="skillcard">
+            <h3>Programming</h3>
+            <ul>
+              <li>Python (fundamentals, OOP, file I/O)</li>
+              <li>JavaScript (web basics)</li>
+              <li>Problem solving & debugging</li>
+            </ul>
+          </div>
+
+          <div class="skillcard">
+            <h3>Web</h3>
+            <ul>
+              <li>HTML/CSS (semantic, responsive)</li>
+              <li>GitHub Pages deployment</li>
+              <li>DNS setup and HTTPS</li>
+            </ul>
+          </div>
+
+          <div class="skillcard">
+            <h3>Professional</h3>
+            <ul>
+              <li>Clear communication and documentation</li>
+              <li>Time management across work + school</li>
+              <li>Continuous improvement mindset</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>About</h2>
+          <p class="muted">A quick summary of who I am and what I’m aiming for.</p>
+        </div>
+
+        <div class="about">
+          <p>
+            I’m a Computer Science student building a strong technical portfolio through hands-on projects.
+            I like structured problem-solving, clean design, and shipping work that is reliable.
+          </p>
+          <p>
+            I’m currently focused on internships and building projects that demonstrate real-world skills:
+            automation, web development, and practical software tools.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2>Contact</h2>
+          <p class="muted">Add your preferred contact links below.</p>
+        </div>
+
+        <div class="contact">
+          <div class="contact__box">
+            <h3>Links</h3>
+            <ul class="contact__list">
+              <li>
+                <span class="muted">GitHub:</span>
+                <a href="https://github.com/TawodzeraT" target="_blank" rel="noreferrer">github.com/TawodzeraT</a>
+              </li>
+              <li>
+                <span class="muted">LinkedIn:</span>
+                <span class="muted">Add your link here</span>
+              </li>
+              <li>
+                <span class="muted">Email:</span>
+                <span class="muted">Add your email here</span>
+              </li>
+            </ul>
+            <p class="muted small">
+              When your business email is ready, replace the placeholders above (example: tavonga@tawodzera.com).
+            </p>
+          </div>
+
+          <div class="contact__box">
+            <h3>Download Resume (optional)</h3>
+            <p class="muted">
+              Upload a PDF named <strong>resume.pdf</strong> into this repo, then add a link like:
+            </p>
+            <pre class="code"><code>&lt;a href="resume.pdf" target="_blank"&gt;Resume (PDF)&lt;/a&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="muted small">© <span id="year"></span> Tavonga Tawodzera. Built with GitHub Pages.</p>
+      <a class="muted small" href="#main">Back to top</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
